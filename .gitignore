@@ -1,0 +1,15 @@
+*.bak
+*.pyc
+/src/dist
+/src/record
+/src/build
+/src/capture
+/src/__pycache__
+/src/UI/__pycache__
+/src/*.ini
+/src/screenshot
+/_eric6project/preview_tool.e4q
+/_eric6project/preview_tool.e6t
+
+/src/tools/__pycache__
+/_eric6project

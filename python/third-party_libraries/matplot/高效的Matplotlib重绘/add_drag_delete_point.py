@@ -27,6 +27,7 @@ class DrawDragPoints(object):
         # imshow would be _much_ faster in this case, but let's deliberately
         # use something slow...
         ax.pcolormesh(np.random.random((1000, 1000)), cmap='gray')
+        ax.grid(True)
 
         ax.set_title('Left click to add/drag a point\nRight-click to delete')
         return fig, ax
@@ -111,7 +112,7 @@ class DrawDragPoints(object):
         self.fig.canvas.blit(self.fig.bbox)
 
     def show(self):
-        self.fig.canvas.draw()
-        # plt.show()
+        plt.show()
 
 DrawDragPoints().show()
+
